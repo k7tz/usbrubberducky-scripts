@@ -1,4 +1,4 @@
-Modified Hoaxshell for the usb RubberDucky:
+Hoaxshell with usb RubberDucky:
 -------------------------------------------
 
 Powershell reverse shell with Authorization ID using Hoaxshell,after we insert the USB RubberDucky wait a few seconds for the payload to load and when its done the Capslook turns ON/OFF on target
